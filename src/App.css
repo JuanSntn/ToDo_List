@@ -1,0 +1,75 @@
+
+
+#root {
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.checkbox{
+  appearance: none;
+  width: 19px;
+  height: 19px;
+  background-color: #484f58 ;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.checkbox:checked{
+  background-color: #343a3f;
+}
+
+.checkbox:checked::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url('./check.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  display: block;
+  background-color: transparent; /* Ajusta esto */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 14px; /* Ancho de la barra de desplazamiento */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4f4f4f;  /* Color de fondo del pulgar de la barra de desplazamiento */
+  border-radius: 20px; /* Bordes redondeados del pulgar de la barra de desplazamiento */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f100; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+.popup-delete::before{
+  content: "";
+  border-color: transparent #4b5563;
+  border-style:  solid;
+  border-width: 12px 0 6px 10px;
+  display: block;
+  width: 0;
+  position:  absolute;
+  right: 4px;
+  top: -12px;
+  transform: rotate(-90deg);
+}
+
+.custom-scrollbar2::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+  margin-inline: auto; /* Centra la barra de desplazamiento */
+}
+
+.custom-scrollbar2::-webkit-scrollbar-thumb {
+  background-color: #1e293b; /* Color de fondo del pulgar de la barra de desplazamiento */
+  border-radius: 50px;
+}
+
+.custom-scrollbar2::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0); /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+
+
